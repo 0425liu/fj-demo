@@ -101,7 +101,7 @@
       <HomeBox title="区域数据" height="835">
         <template v-slot:content>
           <div class="map">
-            <img src="../assets/image/map.png" width="100%" />
+            <img src="/images/map.png" width="100%" />
             <div class="mark" style="left:568px;top:115px;">
               <dl>
                 <dt>红卫</dt>
