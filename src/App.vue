@@ -17,7 +17,6 @@ export default {
     const WIDTH = 1920;
     let HtmlScaleInit = () => {
       let app = document.getElementById("app");
-      console.log(app);
       app.style = `transform:scale(${window.innerWidth /
         WIDTH},${window.innerHeight / HEIGHT})`;
     };
