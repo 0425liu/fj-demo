@@ -3,7 +3,10 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
-
+function getAbsolutePath() {
+  let path = location.pathname;
+  return path.substring(0, path.lastIndexOf("/") + 1);
+}
 const routes = [
   {
     path: "/",
@@ -23,7 +26,10 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  base: process.env.BASE_URL,
+  base:
+    process.env.NODE_ENV === "production"
+      ? getAbsolutePath()
+      : process.env.BASE_URL,
   routes
 });
 
