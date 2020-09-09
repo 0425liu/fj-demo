@@ -16,11 +16,11 @@
             </dl>
             <dl>
               <dt>
-                <h2>25.00<span>mw</span></h2>
+                <h2>350<span>mw</span></h2>
                 <p>实时有功功率</p>
               </dt>
               <dd>
-                <h2>26.90<span>m/s</span></h2>
+                <h2>13<span>m/s</span></h2>
                 <p>实时平均风速</p>
               </dd>
             </dl>
@@ -77,19 +77,19 @@
               <li>
                 <div class="pjfs_item purple">
                   <h2>日实时平均风速（m/s）</h2>
-                  <p>30.87</p>
+                  <p>13</p>
                 </div>
               </li>
               <li>
                 <div class="pjfs_item green">
                   <h2>月实时平均风速（m/s）</h2>
-                  <p>30.87</p>
+                  <p>13</p>
                 </div>
               </li>
               <li>
                 <div class="pjfs_item blue">
                   <h2>年实时平均风速（m/s）</h2>
-                  <p>30.87</p>
+                  <p>13</p>
                 </div>
               </li>
             </ul>
@@ -101,40 +101,40 @@
       <HomeBox title="区域数据" height="835">
         <template v-slot:content>
           <div class="map">
-            <img src="../assets/image/map.png" width="100%" />
+            <img src="/images/map.png" width="100%" />
             <div class="mark" style="left:568px;top:115px;">
               <dl>
-                <dt>红卫</dt>
-                <dd>50.00m/s</dd>
-                <dd>50.00MW</dd>
+                <dt>大同</dt>
+                <dd>14m/s</dd>
+                <dd>99MW</dd>
               </dl>
             </div>
             <div class="mark" style="left:415px;top:214px;">
               <dl>
-                <dt>红卫</dt>
-                <dd>50.00m/s</dd>
-                <dd>50.00MW</dd>
+                <dt>平鲁</dt>
+                <dd>14m/s</dd>
+                <dd>99MW</dd>
               </dl>
             </div>
             <div class="mark" style="left:533px;top:388px;">
               <dl>
-                <dt>红卫</dt>
-                <dd>50.00m/s</dd>
-                <dd>50.00MW</dd>
+                <dt>寿阳</dt>
+                <dd>14m/s</dd>
+                <dd>99MW</dd>
               </dl>
             </div>
             <div class="mark" style="left:196px;top:567px;">
               <dl>
-                <dt>红卫</dt>
-                <dd>50.00m/s</dd>
-                <dd>50.00MW</dd>
+                <dt>临猗</dt>
+                <dd>14m/s</dd>
+                <dd>99MW</dd>
               </dl>
             </div>
             <div class="mark" style="left:441px;top:576px;">
               <dl>
-                <dt>红卫</dt>
-                <dd>50.00m/s</dd>
-                <dd>50.00MW</dd>
+                <dt>屯留</dt>
+                <dd>14m/s</dd>
+                <dd>99MW</dd>
               </dl>
             </div>
           </div>
@@ -243,7 +243,7 @@ export default {
             color: "#00cbff",
             fontSize: 14
           },
-          data: ["南澳", "饶平", "汕尾", "阳江", "南山", "红卫"]
+          data: ["大同", "平鲁", "寿阳", "临猗", "屯留"]
         },
         yAxis: {
           splitLine: {
@@ -277,7 +277,7 @@ export default {
               fontSize: 18,
               position: "top"
             },
-            data: [79.39, 37.27, 64.69, 69.12, 93.04, 9.55]
+            data: [79.39, 37.27, 64.69, 69.12, 93.04]
           }
         ]
       });

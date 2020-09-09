@@ -3,32 +3,32 @@
     <ul class="nav_left">
       <li><router-link to="/" exact>首页</router-link></li>
       <li>/</li>
-      <li><router-link to="/">上一页</router-link></li>
+      <li><a> 上一页</a></li>
       <li>/</li>
-      <li><router-link to="/">下一页</router-link></li>
+      <li><a> 下一页</a></li>
       <li>/</li>
-      <li><router-link to="/FjRect">风机矩阵</router-link></li>
+      <li><router-link to="/fjrect">风场矩阵</router-link></li>
       <li>/</li>
-      <li><router-link to="/">风机列表</router-link></li>
+      <li><router-link to="/fjlist">风场列表</router-link></li>
       <li>/</li>
-      <li><router-link to="/">升压站</router-link></li>
+      <li><router-link to="/fjlist/monitor">振动检测</router-link></li>
       <li>/</li>
-      <li><router-link to="/">报警一览</router-link></li>
+      <li><a> 报警一览</a></li>
     </ul>
     <ul class="nav_right">
-      <li><router-link to="/">系统日志</router-link></li>
+      <li><a> 系统日志</a></li>
       <li>/</li>
-      <li><router-link to="/">数据管理</router-link></li>
+      <li><a> 数据管理</a></li>
       <li>/</li>
-      <li><router-link to="/">数据一览</router-link></li>
+      <li><a> 数据一览</a></li>
       <li>/</li>
-      <li><router-link to="/">操作日志</router-link></li>
+      <li><a> 操作日志</a></li>
       <li>/</li>
-      <li><router-link to="/">用户管理</router-link></li>
+      <li><a> 用户管理</a></li>
       <li>/</li>
-      <li><router-link to="/">密码管理</router-link></li>
+      <li><a> 密码管理</a></li>
       <li>/</li>
-      <li><router-link to="/">退出</router-link></li>
+      <li><a> 退出</a></li>
     </ul>
   </header>
 </template>

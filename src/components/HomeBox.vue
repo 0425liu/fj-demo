@@ -2,6 +2,7 @@
   <div class="item" :style="{ height: height + 'px' }">
     <div class="item_title">
       <img src="../assets/image/icon1.png" />{{ title }}
+      <div class="f_r" v-if="more"><a>详情</a>></div>
     </div>
     <slot name="content"></slot>
   </div>
@@ -12,7 +13,11 @@ export default {
   name: "HomeBox",
   props: {
     title: String,
-    height: String
+    height: String,
+    more: {
+      default: false,
+      type: Boolean
+    }
   }
 };
 </script>
@@ -31,6 +36,12 @@ export default {
       rgba(7, 29, 75, 0.4),
       rgba(21, 48, 109, 0.4)
     );
+    .f_r {
+      padding-right: 15px;
+      a {
+        text-decoration: none;
+      }
+    }
     &:after {
       content: "";
       width: 0;

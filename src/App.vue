@@ -16,10 +16,14 @@ export default {
     const HEIGHT = 960;
     const WIDTH = 1920;
     let HtmlScaleInit = () => {
+      let scale = {
+        x: window.innerWidth / WIDTH,
+        y: window.innerHeight / HEIGHT
+      };
       let app = document.getElementById("app");
-      console.log(app);
-      app.style = `transform:scale(${window.innerWidth /
-        WIDTH},${window.innerHeight / HEIGHT})`;
+      app.style = `transform:scale(${scale.x},${scale.y})`;
+      document.body.style = `${scale.y});width:${WIDTH *
+        scale.x}px;height:${HEIGHT * scale.y}px`;
     };
     HtmlScaleInit();
     window.onresize = () => {
